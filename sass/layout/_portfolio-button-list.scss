@@ -1,12 +1,11 @@
-.button {
+.list-bottons-button {
   display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
+  min-width: 73px;
   color: $white-color;
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -19,6 +18,8 @@
 
   &:hover,
   &:focus {
-    background-color: $dark-background-button;
+    color: $title-tex-color;
+    background-color: $background-color-section;
+    box-shadow: none;
   }
 }

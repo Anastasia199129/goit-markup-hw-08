@@ -1,0 +1,31 @@
+.hero {
+  background-color: var(--dark-fone);
+  padding-top: 200px;
+  padding-bottom: 190px;
+}
+
+.overlay {
+  width: 1600px;
+  min-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient($background-overley, $background-overley),
+    url(../img/hero-optimiz.jpg);
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 30px;
+}
+
+.hero .button {
+  margin: 0 auto;
+}

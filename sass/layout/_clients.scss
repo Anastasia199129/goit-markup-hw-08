@@ -1,0 +1,38 @@
+// .clients-list {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+.list-linc-clients {
+  width: 170px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.linc-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid $fill-icon;
+  border-radius: 4px;
+
+  transition: border $transition;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $accent-color;
+  }
+}
+
+.icon-clients {
+  fill: $fill-icon;
+  transition: fill $transition;
+}
