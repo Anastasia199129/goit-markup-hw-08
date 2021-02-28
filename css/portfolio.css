@@ -257,6 +257,13 @@ img {
 .logo-header {
   display: flex;
   flex-wrap: nowrap;
+  margin-right: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 93px;
+  }
 }
 
 .nav-list-item + .nav-list-item {
@@ -369,18 +376,12 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .logo-header {
-    margin-right: 88px;
-  }
   .nav-list {
     margin-right: 82px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .logo-header {
-    margin-right: 93px;
-  }
   .nav-list {
     margin-right: 0;
   }
