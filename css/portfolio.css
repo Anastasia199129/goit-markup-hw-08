@@ -106,7 +106,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 450px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -114,7 +114,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 738px;
+    width: 768px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -127,7 +127,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
