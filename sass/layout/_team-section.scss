@@ -1,6 +1,34 @@
 // .list-card-team {
 //   display: flex;
 // }
+@media screen and (max-width: 767px) {
+  .card-team-item {
+    & + & {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-team-item {
+    width: 354px;
+    height: 536px;
+    margin: 15px;
+  }
+
+  .list-card-team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-team-item {
+    width: 270px;
+    height: 428px;
+  }
+}
 
 .team {
   background-color: $background-color-section;
