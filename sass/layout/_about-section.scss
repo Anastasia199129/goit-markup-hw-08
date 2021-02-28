@@ -65,4 +65,11 @@
     height: 251px;
     margin: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    .about-list-item {
+      width: 270px;
+      height: 251px;
+    }
+  }
 }

@@ -587,6 +587,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .about-list-item {
+    width: 270px;
+    height: 251px;
+  }
+}
+
 .team {
   background-color: #f5f4fa;
 }
@@ -626,6 +633,11 @@ img {
 
 .section-img {
   padding-bottom: 94px;
+}
+
+.img-list {
+  display: flex;
+  margin: -15px;
 }
 
 .img-list-item {
