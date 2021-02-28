@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //   width: 270px;
+  width: 100%;
   height: 120px;
   background-color: $background-color-section;
   margin-bottom: 30px;
@@ -29,6 +29,11 @@
   text-transform: uppercase;
   color: $title-tex-color;
   margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    text-align: left;
+  }
 }
 
 .about-list-paragraph {
@@ -37,4 +42,26 @@
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: $primary-text-color;
+}
+
+.about-list-item {
+  width: 100%;
+
+  & + & {
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 767) {
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-list-item {
+    width: 354px;
+    height: 250px;
+  }
 }

@@ -1,4 +1,14 @@
 .section-img {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-img {
+    display: block;
+  }
+}
+
+.section-img {
   padding-bottom: 94px;
 }
 

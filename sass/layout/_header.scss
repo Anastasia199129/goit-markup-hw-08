@@ -32,14 +32,12 @@
   transform: translateX(-50%) translateY(-100%);
   padding: 48px 40px;
   top: 0;
-  background-color: aqua;
 
   transition: transform $transition;
 }
 
 .mobile-menu.is-open {
   transform: translateX(-50%) translateY(0%);
-  color: aquamarine;
 }
 
 .close-menu {
@@ -134,8 +132,8 @@
 
 .list-contacts-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.02em;
   color: $primary-text-color;
   transition: color $transition;
@@ -194,8 +192,5 @@
 @media screen and (min-width: 1200px) {
   .nav-list {
     margin-right: 0;
-  }
-  .header {
-    background-color: tomato;
   }
 }
