@@ -614,6 +614,18 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .overlay-container {
     width: 405px;
@@ -635,6 +647,9 @@ img {
     margin: 15px;
     height: 404px;
   }
+  .portfolio-item .portfolio-item:nth-child(-n + 2) {
+    height: 440px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -650,12 +665,6 @@ img {
   position: relative;
   height: 294px;
   overflow: hidden;
-}
-
-@media screen and (max-width: 479px) {
-  .portfolio-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 .portfolio-img {
