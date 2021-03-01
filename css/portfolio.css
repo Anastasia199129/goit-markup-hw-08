@@ -373,7 +373,7 @@ img {
 .logo-header {
   display: flex;
   flex-wrap: nowrap;
-  margin-right: 88px;
+  margin-right: 80px;
 }
 
 @media screen and (min-width: 768px) {
@@ -431,11 +431,21 @@ img {
 }
 
 /*contacts header*/
-.list-contacts {
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
-  padding: 21px 0px;
+@media screen and (max-width: 1199px) {
+  .list-contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 21px 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .list-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .list-contacts-item {
@@ -493,7 +503,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .navigation {
-    margin-right: 82px;
+    margin-right: 65px;
   }
 }
 
