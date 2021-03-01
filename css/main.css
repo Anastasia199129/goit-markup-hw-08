@@ -249,7 +249,6 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  text-align: center;
   color: #757575;
 }
 
@@ -274,6 +273,7 @@ img {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  z-index: 1;
 }
 
 .burger-btn {
