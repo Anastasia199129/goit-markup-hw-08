@@ -492,7 +492,7 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .nav-list {
+  .navigation {
     margin-right: 82px;
   }
 }
@@ -616,10 +616,9 @@ img {
     margin-left: 0 auto;
     margin-right: 0 auto;
   }
-}
-
-.portfolio-item:not(:last-child) {
-  margin-bottom: 30px;
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-img {
