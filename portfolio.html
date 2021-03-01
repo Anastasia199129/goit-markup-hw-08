@@ -226,7 +226,7 @@
                 <picture>
                     <source srcset="./img/desktop/isdanie.webp 1x, ./img/desktop/isdanie@2x.webp 2x" media="(min-width: 1200px)"
                         type="imege/webp">
-                    <source srcset="./img/desktop/isdanie-j.jpg 1x, ./img/desktop/isdanie-j@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/desktop/isdanie-j.png 1x, ./img/desktop/isdanie-j@2x 2x" media="(min-width: 1200px)">
                 
                     <source srcset="./img/tablet/img-limited-j.webp 1x, ./img/tablet/img-limited-j@2x.webp 2x"
                         media="(min-width: 768px)" type="imege/webp">
@@ -235,7 +235,7 @@
                     <source srcset="./img/mobail/img-limited.webp 1x, ./img/mobail/img-limited@2x.webp 2x" media="(min-width: 320px)"
                         type="imege/webp">
                     <source srcset="./img/mobail/img-limited-j.jpg 1x, ./img/mobail/img-limited-j@2x.jpg 2x" media="(min-width: 320px)">
-                    <img class="portfolio-img src=" alt="ноутбук с тремя карточками">
+                    <img class="portfolio-img src=" alt="журнал">
                 </picture>
                 <div class="overlay-portfolio">
                     <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -306,57 +306,62 @@
 </section>
 </main>
 <!-- footer -->
-<footer class="">
-    <div class="conteiter">
-        <div>
-            <a href="index.html" class="logo">Web<span>Studio</span></a>
-            <address>
-                <ul>
-                    <li>
-                        <a href="https://goo.gl/maps/7nN6Voqe11DpLYrc8">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
+<footer class="footer">
+    <div class="conteiner footer-conteiner">
+        <div class="footer-address">
+            <a class="logo logo-footer link" href="index.html"><span class="logo-span-footer">Web</span>Studio</a>
+            <address class="address-footer">
+                <ul class="list-footer">
+                    <li class="item-footer list"><a class="link-footer link white-link"
+                            href="https://goo.gl/maps/Lhu3DwiovZqrXFvk8">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="item-footer list"><a class="link-footer link"
+                            href="mailto:info@devstudio.com">info@example.com</a></li>
+                    <li class="item-footer list"><a class="link-footer link" href="tel:+38096111111">+38 099 111 11
+                            11</a></li>
                 </ul>
             </address>
         </div>
-        <div>
-            <b>присоединяйтесь</b>
-            <ul>
-                <li>
-                    <a href=""></a>
-                    <svg height="20" width="20">
-                        <use href="./img/sprite.svg.svg#icon-instagram"></use>
-                    </svg>
+        <div class="conteiner-soclinks-footer">
+            <b class="b-footer">присоединяйтесь</b>
+            <ul class="list-social-links list">
+                <li class="list-social-links-item transparent-bgr-link">
+                    <a class="list-social-links-link" href="">
+                        <svg class="icon-footer" height="20" width="20">
+                            <use href="./img/sprite.svg.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+
                 </li>
-                <li>
-                    <a href=""></a>
-                    <svg height="20" width="20">
-                        <use href="./img/sprite.svg.svg#icon-twitter"></use>
-                    </svg>
+                <li class="list-social-links-item transparent-bgr-link">
+                    <a class="list-social-links-link" href="">
+                        <svg class="icon-footer" height="20" width="20">
+                            <use href="./img/sprite.svg.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+
                 </li>
-                <li>
-                    <a href=""></a>
-                    <svg height="20" width="20">
-                        <use href="./img/sprite.svg.svg#icon-facebook"></use>
-                    </svg>
+                <li class="list-social-links-item transparent-bgr-link">
+                    <a class="list-social-links-link" href="">
+                        <svg class="icon-footer" height="20" width="20">
+                            <use href="./img/sprite.svg.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+
                 </li>
-                <li>
-                    <a href=""></a>
-                    <svg height="20" width="20">
-                        <use href="./img/sprite.svg.svg#icon-linkedin"></use>
-                    </svg>
+                <li class="list-social-links-item transparent-bgr-link">
+                    <a class="list-social-links-link" href="">
+                        <svg class="icon-footer" height="20" width="20">
+                            <use href="./img/sprite.svg.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+
                 </li>
             </ul>
         </div>
-        <div>
-            <b>Подпишитесь на рассылку</b>
-            <input name="email" type="email" placeholder="E-mail">
-            <button type="button">Подписаться</button>
+        <div class="subscribe-conteiner">
+            <b class="b-footer">Подпишитесь на рассылку</b>
+            <input class="input-footer" name="email" type="email" placeholder="E-mail">
+            <button class="button  subscribe-button" type="button">Подписаться</button>
         </div>
     </div>
 </footer>
