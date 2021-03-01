@@ -577,6 +577,10 @@ img {
   }
 }
 
+.list-portfolio {
+  padding-bottom: 60px;
+}
+
 .overlay-portfolio {
   position: absolute;
   top: 0;
@@ -619,6 +623,20 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .list-portfolio {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: -15px;
+  }
+  .portfolio-item {
+    margin: 15px;
+    height: 404px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .overlay-container {
     width: 370px;
@@ -635,10 +653,6 @@ img {
 }
 
 @media screen and (max-width: 479px) {
-  .portfolio-item {
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-  }
   .portfolio-item:not(:last-child) {
     margin-bottom: 30px;
   }
