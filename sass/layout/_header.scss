@@ -176,25 +176,31 @@
   }
 }
 /*contacts header*/
+
 @media screen and (max-width: 1199px) {
   .list-contacts {
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    padding: 21px 0px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .list-contacts-item + .list-contacts-item {
+    margin-top: 10px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .list-contacts {
-    display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-.list-contacts-item {
-  margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .list-contacts-item + .list-contacts-item {
+    margin-left: 30px;
+  }
 }
 
 .list-contacts-link {
