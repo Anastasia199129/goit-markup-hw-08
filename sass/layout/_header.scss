@@ -7,12 +7,6 @@
 .wrapper-mobile-contact {
   margin-top: 300px;
 }
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  z-index: 1;
-}
 
 .burger-btn {
   top: 10px;
@@ -37,11 +31,15 @@
   background-color: $white-color;
   width: 100%;
   max-width: 480px;
-  height: 760px;
+  height: 790px;
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
   padding: 48px 40px;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  z-index: 1;
 
   transition: transform $transition;
 }
@@ -70,14 +68,14 @@
   margin-top: 30px;
 }
 
-.list-contacts-item-mail {
-  margin-top: 32px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.167;
-  letter-spacing: 0.02em;
-  color: $primary-text-color;
-}
+// .list-contacts-item-mail {
+//   margin-top: 32px;
+//   font-weight: 500;
+//   font-size: 24px;
+//   line-height: 1.167;
+//   letter-spacing: 0.02em;
+// color: $primary-text-color;
+// }
 
 .list-contacts-link-tel {
   font-weight: 500;
@@ -91,10 +89,11 @@
   font-size: 24px;
   line-height: 0.857;
   letter-spacing: 0.02em;
+  color: $primary-text-color;
 }
 
-.mobile-list-soclinks {
-  margin-top: 64px;
+.list-contacts-item-mail {
+  margin-top: 32px;
 }
 
 .mobile-list-soclinks-item-link {
@@ -108,6 +107,13 @@
 .mobile-list-soclinks {
   display: flex;
   justify-content: space-between;
+  margin-top: 64px;
+
+  & li + li {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid $primary-text-color;
+  }
 }
 
 /*mobale-menu end*/
