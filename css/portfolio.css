@@ -648,9 +648,6 @@ img {
     margin: 15px;
     height: 404px;
   }
-  .portfolio-item .portfolio-item:nth-child(-n + 2) {
-    height: 440px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -702,6 +699,15 @@ img {
 .portfolio-link:hover, .portfolio-link:focus {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-increased-cfrd-conteiner {
+    height: 148px;
+  }
+  .portfolio-increased-cfrd {
+    height: 440px;
+  }
 }
 
 .footer {
