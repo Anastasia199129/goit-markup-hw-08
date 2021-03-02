@@ -5,14 +5,31 @@
 // }
 
 .hero {
-  width: 480px;
-  height: 320px;
+  // width: 320px;
+  min-height: 400px;
   margin-right: auto;
   margin-left: auto;
+  background-color: $ark-fone;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-position: 480px 320px;
   background-image: linear-gradient($background-overley, $background-overley),
     url(../../img/mobail/Hero-img.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient($background-overley, $background-overley),
+      url(../../img/tablet/Hero-img.jpg);
+  }
+}
+
+@media screen and (min-width: 120px) {
+  .hero {
+    background-image: linear-gradient($background-overley, $background-overley),
+      url(../../img/desktop/header.png);
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
@@ -79,7 +96,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 360px;
+    // width: 360px;
   }
   .wrapper-title-hero {
     height: 320px;
