@@ -60,7 +60,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
-  src: url(../components/);
+  src: url(../base/_fonts.scss);
 }
 
 h1,
