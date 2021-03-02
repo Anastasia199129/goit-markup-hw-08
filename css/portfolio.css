@@ -60,6 +60,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  src: url(../components/);
 }
 
 h1,
@@ -352,7 +353,6 @@ img {
 
 .mobile-list-soclinks {
   display: flex;
-  justify-content: space-between;
   margin-top: 64px;
 }
 
@@ -573,8 +573,8 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .list-bottons-item:nth-child(n + 4) {
-    margin-top: 15px;
+  .list-bottons-item:nth-child(-n + 3) {
+    margin-bottom: 15px;
   }
 }
 

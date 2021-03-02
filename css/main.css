@@ -60,6 +60,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  src: url(../components/);
 }
 
 h1,
@@ -358,7 +359,6 @@ img {
 
 .mobile-list-soclinks {
   display: flex;
-  justify-content: space-between;
   margin-top: 64px;
 }
 
@@ -706,7 +706,6 @@ img {
 @media screen and (min-width: 768px) {
   .card-team-item {
     width: 354px;
-    height: 536px;
     margin: 15px;
   }
   .list-card-team {
@@ -719,7 +718,6 @@ img {
 @media screen and (min-width: 1200px) {
   .card-team-item {
     width: 270px;
-    height: 428px;
   }
 }
 

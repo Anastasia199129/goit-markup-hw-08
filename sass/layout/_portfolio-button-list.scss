@@ -46,7 +46,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .list-bottons-item:nth-child(n + 4) {
-    margin-top: 15px;
+  .list-bottons-item:nth-child(-n + 3) {
+    margin-bottom: 15px;
   }
 }
