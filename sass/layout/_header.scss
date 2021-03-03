@@ -4,9 +4,9 @@
 }
 /*mobale-menu*/
 
-.wrapper-mobile-contact {
-  margin-top: 300px;
-}
+// .wrapper-mobile-contact {
+//   margin-top: 300px;
+// }
 
 .burger-btn {
   top: 10px;
@@ -27,18 +27,21 @@
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
+  overflow: auto;
   background-color: $white-color;
   width: 100%;
   max-width: 480px;
-  height: 790px;
-  left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  padding: 48px 40px;
+  height: 100vh;
+  // max-height: 767px;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-120%);
+  padding: 48px 40px;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-between;
+  // align-content: space-between;
   z-index: 1;
 
   transition: transform $transition;
@@ -68,15 +71,6 @@
   margin-top: 30px;
 }
 
-// .list-contacts-item-mail {
-//   margin-top: 32px;
-//   font-weight: 500;
-//   font-size: 24px;
-//   line-height: 1.167;
-//   letter-spacing: 0.02em;
-// color: $primary-text-color;
-// }
-
 .list-contacts-link-tel {
   font-weight: 500;
   font-size: 34px;
@@ -99,15 +93,16 @@
 .mobile-list-soclinks-item-link {
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222;
   letter-spacing: 0.02em;
   color: $accent-color;
 }
 
 .mobile-list-soclinks {
   display: flex;
-  // justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 64px;
+  word-wrap: break-word;
 
   & li + li {
     margin-left: 10px;
@@ -129,9 +124,13 @@
 .logo-header {
   display: flex;
   flex-wrap: nowrap;
-  margin-right: 80px;
+  // margin-right: 80px;
 
   @media screen and (min-width: 768px) {
+    margin-right: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }

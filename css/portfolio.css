@@ -59,6 +59,12 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+  .conteiner {
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
@@ -214,10 +220,6 @@ img {
 }
 
 /*mobale-menu*/
-.wrapper-mobile-contact {
-  margin-top: 300px;
-}
-
 .burger-btn {
   top: 10px;
   right: 10px;
@@ -236,18 +238,19 @@ img {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
+  overflow: auto;
   background-color: #ffffff;
   width: 100%;
   max-width: 480px;
-  height: 790px;
-  left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  padding: 48px 40px;
+  height: 100vh;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-120%);
+  padding: 48px 40px;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-between;
   z-index: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -300,14 +303,16 @@ img {
 .mobile-list-soclinks-item-link {
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 
 .mobile-list-soclinks {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
+  word-wrap: break-word;
 }
 
 .mobile-list-soclinks li + li {
@@ -328,10 +333,15 @@ img {
 .logo-header {
   display: flex;
   flex-wrap: nowrap;
-  margin-right: 80px;
 }
 
 @media screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .logo-header {
     margin-right: 93px;
   }
@@ -536,6 +546,10 @@ img {
   padding-bottom: 60px;
 }
 
+.portfolio-item {
+  position: relative;
+}
+
 .overlay-portfolio {
   position: absolute;
   top: 0;
@@ -569,39 +583,15 @@ img {
   }
 }
 
-@media screen and (min-width: 320px) {
-  .portfolio-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
 }
 
-@media screen and (max-width: 767px) {
-  .portfolio-item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .overlay-container {
-    width: 405px;
-  }
-  .portfolio-item {
-    width: 405px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .list-portfolio {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    margin: -15px;
-  }
-  .portfolio-item {
-    margin: 15px;
-    height: 404px;
-  }
+.portfolio-item {
+  margin: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -661,6 +651,17 @@ img {
   }
   .portfolio-increased-cfrd {
     height: 440px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-item {
+    max-width: 450px;
+  }
+  .list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
