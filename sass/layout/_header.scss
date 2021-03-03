@@ -124,6 +124,8 @@
 .logo-header {
   display: flex;
   flex-wrap: nowrap;
+  padding-top: 16px;
+  padding-bottom: 16px;
   // margin-right: 80px;
 
   @media screen and (min-width: 768px) {
@@ -132,6 +134,8 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 

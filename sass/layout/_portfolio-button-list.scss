@@ -50,3 +50,14 @@
     margin-bottom: 15px;
   }
 }
+
+.list-bottons button {
+  background-color: $background-color-section;
+  color: $title-tex-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+  }
+}
