@@ -6,14 +6,16 @@
 
 .hero {
   // width: 320px;
+  min-width: 320px;
+  width: 100%;
   min-height: 400px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
   background-color: $ark-fone;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position: 480px 320px;
   background-image: linear-gradient($background-overley, $background-overley),
     url(../../img/mobail/Hero-img.jpg);
 }
@@ -30,6 +32,7 @@
     background-image: linear-gradient($background-overley, $background-overley),
       url(../../img/desktop/header.png);
     max-width: 1600px;
+    height: 600px;
   }
 }
 
@@ -37,47 +40,26 @@
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: url(../../img/mobail/Hero-img-@2x.jpg);
+    background-image: linear-gradient($background-overley, $background-overley),
+      url(../../img/mobail/Hero-img-@2x.jpg);
   }
 }
-
-// @media screen and (min-width: 768px) {
-//   .hero {
-//     background-image: url(../../img/tablet/Hero-img.jpg);
-//   }
-// }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(../../img/tablet/Hero-img@2x.jpg);
+    background-image: linear-gradient($background-overley, $background-overley),
+      url(../../img/tablet/Hero-img@2x.jpg);
   }
 }
-
-// @media screen and (min-width: 1200px) {
-//   .hero {
-//     background-image: url(../../img/desktop/header.png);
-//   }
-// }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../../img/desktop/header@2x.png);
-  }
-}
-
-.hero {
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 400px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    height: 600px;
+    background-image: linear-gradient($background-overley, $background-overley),
+      url(../../img/desktop/header@2x.png);
   }
 }
 
