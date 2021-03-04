@@ -6,27 +6,27 @@
   text-align: center;
   letter-spacing: 0.06em;
   min-width: 73px;
-  color: $white-color;
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   padding: 6px 22px;
   border: none;
   cursor: pointer;
+  background-color: $background-color-section;
+  color: $title-tex-color;
 
   transition: background-color $transition;
 
   &:hover,
   &:focus {
-    color: $title-tex-color;
-    background-color: $background-color-section;
-    box-shadow: none;
+    background-color: $accent-color;
+    color: $white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
+
 .activ-button {
   background-color: $accent-color;
   color: $white-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .list-bottons {
@@ -49,16 +49,5 @@
 @media screen and (max-width: 767px) {
   .list-bottons-item:nth-child(-n + 3) {
     margin-bottom: 15px;
-  }
-}
-
-.list-bottons button {
-  background-color: $background-color-section;
-  color: $title-tex-color;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    color: $white-color;
   }
 }
