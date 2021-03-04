@@ -92,6 +92,22 @@
 
 .mobile-list-soclinks-item-link {
   font-weight: 500;
+  font-size: 12px;
+  line-height: 0.983;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-list-soclinks-item-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+  }
+}
+
+.mobile-list-soclinks-item-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   letter-spacing: 0.02em;
@@ -126,16 +142,21 @@
   flex-wrap: nowrap;
   padding-top: 16px;
   padding-bottom: 16px;
+
   // margin-right: 80px;
 
   @media screen and (min-width: 768px) {
     margin-right: 80px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
   }
 }
 
