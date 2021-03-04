@@ -1,6 +1,6 @@
-.portfolio-item {
-  position: relative;
-}
+// .portfolio-item {
+//   position: relative;
+// }
 
 .overlay-portfolio {
   position: absolute;
@@ -72,12 +72,8 @@
 
 .overlay-container {
   position: relative;
-  height: 294px;
+  // height: 294px;
   overflow: hidden;
-}
-
-.portfolio-img {
-  height: 100%;
 }
 
 .sabtitle-card {
@@ -102,7 +98,7 @@
 
 .portfolio-link {
   display: block;
-  height: 100%;
+  height: auto;
   width: 100%;
 
   transition: box-shadow $transition;
