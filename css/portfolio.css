@@ -514,15 +514,6 @@ img {
   }
 }
 
-.portfolio-section {
-  padding-top: 60px;
-}
-
-.activ-button {
-  background-color: #2196f3;
-  color: #ffffff;
-}
-
 .list-bottons-button {
   display: block;
   font-weight: 500;
@@ -545,6 +536,11 @@ img {
   color: #212121;
   background-color: #f5f4fa;
   box-shadow: none;
+}
+
+.activ-button {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .list-bottons {
