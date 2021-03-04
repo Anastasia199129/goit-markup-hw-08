@@ -41,7 +41,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-content: space-between;
   z-index: 1;
 
   transition: transform $transition;
@@ -92,9 +91,10 @@
 
 .mobile-list-soclinks-item-link {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 0.983;
   letter-spacing: 0.02em;
+  color: $accent-color;
 }
 
 @media screen and (min-width: 480px) {
@@ -106,13 +106,13 @@
   }
 }
 
-.mobile-list-soclinks-item-link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.222;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-}
+// .mobile-list-soclinks-item-link {
+//   font-weight: 500;
+//   font-size: 18px;
+//   line-height: 1.222;
+//   letter-spacing: 0.02em;
+
+// }
 
 .mobile-list-soclinks {
   display: flex;
