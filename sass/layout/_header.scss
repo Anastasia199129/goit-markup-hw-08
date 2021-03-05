@@ -26,9 +26,7 @@
   overflow: auto;
   background-color: $white-color;
   width: 100%;
-  // max-width: 480px;
   height: 100vh;
-  // max-height: 767px;
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-120%);
@@ -110,14 +108,6 @@
   }
 }
 
-// .mobile-list-soclinks-item-link {
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 1.222;
-//   letter-spacing: 0.02em;
-
-// }
-
 .mobile-list-soclinks {
   display: flex;
   flex-wrap: wrap;
@@ -146,8 +136,6 @@
   flex-wrap: nowrap;
   padding-top: 16px;
   padding-bottom: 16px;
-
-  // margin-right: 80px;
 
   @media screen and (min-width: 768px) {
     margin-right: 80px;
@@ -298,10 +286,6 @@
     margin-right: 65px;
   }
 }
-
-// @media screen and (min-width: 1200px) {
-
-// }
 
 @media screen and (min-width: 1200px) {
   .nav-list {

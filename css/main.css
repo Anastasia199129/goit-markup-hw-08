@@ -522,7 +522,6 @@ img {
   min-width: 320px;
   max-width: 1600px;
   width: 100%;
-  min-height: 400px;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -918,6 +917,12 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-b {
+    line-height: 1.15;
+  }
 }
 
 .modal-label {

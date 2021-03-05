@@ -77,6 +77,12 @@
   color: $title-tex-color;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-b {
+    line-height: 1.15;
+  }
+}
+
 .modal-label {
   display: inline-block;
   margin-bottom: 4px;
