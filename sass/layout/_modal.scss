@@ -22,11 +22,11 @@
 
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 90%;
+    width: 100%;
     max-width: 450px;
     height: 95%;
     max-height: 609px;
-    overflow: scroll;
+    // overflow: scroll;
   }
 }
 
@@ -71,7 +71,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.172;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: $title-tex-color;
@@ -159,12 +159,6 @@
 }
 
 .label-check {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-
   &::before {
     content: "";
     display: inline-block;
@@ -176,6 +170,40 @@
     border-radius: 3px;
     background-position: center;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .label-check {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+  }
+
+  .link-check {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .label-check {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+  }
+
+  .link-check {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+  }
+}
+
+.label-check {
+  color: $primary-text-color;
 
   .modal-check:checked + &::before {
     background-color: $accent-color;
@@ -189,10 +217,6 @@
 }
 
 .link-check {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
   color: $primary-text-color;
   text-decoration: underline;
   color: $accent-color;
