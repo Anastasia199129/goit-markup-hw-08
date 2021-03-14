@@ -3,6 +3,7 @@
   max-width: 1600px;
   width: 100%;
   height: 400px;
+  padding: 118px 0;
   margin-right: auto;
   margin-left: auto;
   background-color: $ark-fone;
@@ -58,9 +59,11 @@
 .hero .button {
   margin: 0 auto;
 }
+
+
 .wrapper-title-hero {
   margin: 0 auto;
-  padding: 118px 0;
+  
 }
 
 @media screen and (max-width: 1199px) {
@@ -80,7 +83,7 @@
   .wrapper-title-hero {
     max-width: 450px;
     height: 100%;
-    // padding-top: 80px;
+    
   }
 }
 
@@ -98,9 +101,13 @@
     margin-bottom: 30px;
     width: 696px;
   }
+  .hero {
+    padding: 200px 0;
+}
+
   .wrapper-title-hero {
     height: 100%;
     width: 669px;
-    padding: 200px 0;
+    
   }
 }
